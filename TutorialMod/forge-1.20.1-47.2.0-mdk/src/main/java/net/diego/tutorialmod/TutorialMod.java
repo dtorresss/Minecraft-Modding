@@ -1,6 +1,7 @@
 package net.diego.tutorialmod;
 
 import com.mojang.logging.LogUtils;
+import net.diego.tutorialmod.block.ModBlocks;
 import net.diego.tutorialmod.item.ModCreativeModTabs;
 import net.diego.tutorialmod.item.ModItems;
 import net.minecraft.world.item.CreativeModeTab;
@@ -29,6 +30,8 @@ public class TutorialMod
         ModCreativeModTabs.register(modEventBus);
 
         ModItems.register(modEventBus);
+
+        ModBlocks.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
