@@ -23,6 +23,15 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModBlocks.RAW_SAPPHIRE_BLOCK.get());
                     })
                     .build());
+    public static final RegistryObject<CreativeModeTab> SPANISH_TAB = CREATIVE_MODE_TABS.register("spanish_tab",
+            ()-> CreativeModeTab.builder().icon(()-> new ItemStack(ModItems.NATIONAL.get()))
+                    .title(Component.translatable("creativetab.spanish_tab"))
+                    .displayItems((pParameters, pOutput) -> {
+                        pOutput.accept(ModItems.NATIONAL.get());
+                        pOutput.accept(ModBlocks.ENDONGO_BLOCK.get());
+                        pOutput.accept(ModBlocks.NN_BLOCK.get());
+                    })
+                    .build());
     public static void register(IEventBus eventBus){
         CREATIVE_MODE_TABS.register(eventBus);
     }
