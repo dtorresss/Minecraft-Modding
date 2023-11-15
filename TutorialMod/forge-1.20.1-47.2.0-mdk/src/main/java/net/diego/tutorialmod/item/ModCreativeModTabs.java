@@ -30,6 +30,8 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModItems.NATIONAL.get());
                         pOutput.accept(ModBlocks.ENDONGO_BLOCK.get());
                         pOutput.accept(ModBlocks.NN_BLOCK.get());
+                        pOutput.accept(ModBlocks.PABLO_MOTOS.get());
+                        pOutput.accept(ModBlocks.AMOR.get());
                     })
                     .build());
     public static void register(IEventBus eventBus){

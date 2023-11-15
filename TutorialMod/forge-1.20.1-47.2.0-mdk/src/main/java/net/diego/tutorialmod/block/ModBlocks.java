@@ -31,6 +31,12 @@ public class ModBlocks {
     public static final RegistryObject<Block> ENDONGO_BLOCK = registerBlock("endongo_block",
             ()-> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.AMETHYST)));
 
+    public static final RegistryObject<Block> PABLO_MOTOS = registerBlock("pablo_motos_block",
+            ()-> new Block(BlockBehaviour.Properties.copy(Blocks.OBSIDIAN).sound(SoundType.AMETHYST)));
+
+    public static final RegistryObject<Block> AMOR = registerBlock("amor_block",
+            ()-> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.AMETHYST)));
+
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block){
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
         registerBlockItem(name, toReturn);

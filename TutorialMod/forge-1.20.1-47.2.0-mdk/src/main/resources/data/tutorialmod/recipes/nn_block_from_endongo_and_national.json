@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " & ",
+    "###",
+    " # "
+  ],
+  "key": {
+    "#": {
+      "item": "tutorialmod:national"
+    },
+    "&": {
+      "item": "tutorialmod:endongo_block"
+  }
+},
+  "result": {
+    "item": "tutorialmod:nn_block"
+  }
+}
