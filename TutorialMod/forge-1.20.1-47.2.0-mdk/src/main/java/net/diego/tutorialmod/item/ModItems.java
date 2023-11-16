@@ -20,6 +20,9 @@ public class ModItems {
     public static final RegistryObject<Item> NATIONAL = ITEMS.register("national",
             ()-> new Item((new Item.Properties())));
 
+    public static final RegistryObject<Item> MOTOS = ITEMS.register("motos",
+            ()-> new Item((new Item.Properties())));
+
     public static void register(IEventBus eventBus){
         ITEMS.register(eventBus);
     }

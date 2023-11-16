@@ -28,6 +28,7 @@ public class ModCreativeModTabs {
                     .title(Component.translatable("creativetab.spanish_tab"))
                     .displayItems((pParameters, pOutput) -> {
                         pOutput.accept(ModItems.NATIONAL.get());
+                        pOutput.accept(ModItems.MOTOS.get());
                         pOutput.accept(ModBlocks.ENDONGO_BLOCK.get());
                         pOutput.accept(ModBlocks.NN_BLOCK.get());
                         pOutput.accept(ModBlocks.PABLO_MOTOS.get());
