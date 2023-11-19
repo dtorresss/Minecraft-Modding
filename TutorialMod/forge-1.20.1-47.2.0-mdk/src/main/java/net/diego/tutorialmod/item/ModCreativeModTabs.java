@@ -19,6 +19,7 @@ public class ModCreativeModTabs {
                     .displayItems((pParameters, pOutput) -> {
                         pOutput.accept(ModItems.SAPPHIRE.get());
                         pOutput.accept(ModItems.RAW_SAPPHIRE.get());
+                        pOutput.accept(ModItems.METAL_DETECTOR.get());
                         pOutput.accept(ModBlocks.SAPPHIRE_BLOCK.get());
                         pOutput.accept(ModBlocks.RAW_SAPPHIRE_BLOCK.get());
                     })
@@ -28,7 +29,7 @@ public class ModCreativeModTabs {
                     .title(Component.translatable("creativetab.spanish_tab"))
                     .displayItems((pParameters, pOutput) -> {
                         pOutput.accept(ModItems.NATIONAL.get());
-                        pOutput.accept(ModItems.MOTOS.get());
+                        pOutput.accept(ModItems.MOTOS_BALL.get());
                         pOutput.accept(ModBlocks.ENDONGO_BLOCK.get());
                         pOutput.accept(ModBlocks.NN_BLOCK.get());
                         pOutput.accept(ModBlocks.PABLO_MOTOS.get());

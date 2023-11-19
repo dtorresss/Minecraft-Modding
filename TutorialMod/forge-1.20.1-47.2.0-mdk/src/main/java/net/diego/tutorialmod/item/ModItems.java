@@ -1,6 +1,8 @@
 package net.diego.tutorialmod.item;
 
 import net.diego.tutorialmod.TutorialMod;
+import net.diego.tutorialmod.item.custom.MetalDetectorItem;
+import net.diego.tutorialmod.item.custom.MotosballItem;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -20,8 +22,12 @@ public class ModItems {
     public static final RegistryObject<Item> NATIONAL = ITEMS.register("national",
             ()-> new Item((new Item.Properties())));
 
-    public static final RegistryObject<Item> MOTOS = ITEMS.register("motos",
-            ()-> new Item((new Item.Properties())));
+    public static final RegistryObject<Item> METAL_DETECTOR = ITEMS.register("metal_detector",
+            ()-> new MetalDetectorItem((new Item.Properties().durability(100))));
+
+
+    public static final RegistryObject<Item> MOTOS_BALL = ITEMS.register("motos_ball",
+            ()-> new MotosballItem((new Item.Properties())));
 
     public static void register(IEventBus eventBus){
         ITEMS.register(eventBus);
