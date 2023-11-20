@@ -30,6 +30,7 @@ public class ModCreativeModTabs {
                     .displayItems((pParameters, pOutput) -> {
                         pOutput.accept(ModItems.NATIONAL.get());
                         pOutput.accept(ModItems.MOTOS_BALL.get());
+                        pOutput.accept(ModItems.RULETA_RUSA.get());
                         pOutput.accept(ModBlocks.ENDONGO_BLOCK.get());
                         pOutput.accept(ModBlocks.NN_BLOCK.get());
                         pOutput.accept(ModBlocks.PABLO_MOTOS.get());

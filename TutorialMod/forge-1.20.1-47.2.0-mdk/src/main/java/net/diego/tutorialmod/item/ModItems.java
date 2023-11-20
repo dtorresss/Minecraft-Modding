@@ -3,6 +3,7 @@ package net.diego.tutorialmod.item;
 import net.diego.tutorialmod.TutorialMod;
 import net.diego.tutorialmod.item.custom.MetalDetectorItem;
 import net.diego.tutorialmod.item.custom.MotosballItem;
+import net.diego.tutorialmod.item.custom.RuletaRusa;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -28,6 +29,9 @@ public class ModItems {
 
     public static final RegistryObject<Item> MOTOS_BALL = ITEMS.register("motos_ball",
             ()-> new MotosballItem((new Item.Properties())));
+
+    public static final RegistryObject<Item> RULETA_RUSA = ITEMS.register("ruleta_rusa",
+            ()-> new RuletaRusa((new Item.Properties().stacksTo(1))));
 
     public static void register(IEventBus eventBus){
         ITEMS.register(eventBus);

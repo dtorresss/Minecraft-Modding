@@ -24,7 +24,7 @@ public class MetalDetectorItem extends Item {
             boolean foundBlock = false;
             for (int i = 0; i <= positionClicked.getY() + 64; i++){
                 BlockState state = pContext.getLevel().getBlockState(positionClicked.below(i));
-                if(isValuableBlock(state)){
+                if (isValuableBlock(state)){
                     outputValuableCoords(positionClicked.below(i), player, state.getBlock());
                     foundBlock = true;
                     break;
